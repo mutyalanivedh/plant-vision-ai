@@ -1,6 +1,7 @@
 import streamlit as st
 from ultralytics import YOLO
 from PIL import Image
+from pathlib import Path
 
 
 # ============================================================
@@ -19,16 +20,27 @@ st.set_page_config(
 # MODEL PATH
 # ============================================================
 
-MODEL_PATH = r"D:\plant_yolo_dataset\runs\classify\train\weights\best.pt"
+# The model file must be stored in the same GitHub folder as app.py.
+# Current deployment model: yolo26n-cls.pt
+BASE_DIR = Path(__file__).resolve().parent
+MODEL_PATH = BASE_DIR / "yolo26n-cls.pt"
 
 
 # ============================================================
 # LOAD YOLO MODEL
 # ============================================================
 
+if not MODEL_PATH.is_file():
+    st.error(
+        f"Model file not found: {MODEL_PATH.name}. "
+        "Upload yolo26n-cls.pt to the same folder as app.py in GitHub."
+    )
+    st.stop()
+
+
 @st.cache_resource
 def load_model():
-    return YOLO(MODEL_PATH)
+    return YOLO(str(MODEL_PATH))
 
 
 model = load_model()
@@ -1595,7 +1607,7 @@ with right:
         st.image(
             image,
             caption="Plant image ready for analysis",
-            use_container_width=True
+            width="stretch"
         )
 
     else:
@@ -1623,7 +1635,7 @@ if image_source is not None:
 
         analyze = st.button(
             "🔬 ANALYZE PLANT",
-            use_container_width=True
+            width="stretch"
         )
 
 
