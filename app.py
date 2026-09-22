@@ -23,7 +23,7 @@ st.set_page_config(
 # The model file must be stored in the same GitHub folder as app.py.
 # Current deployment model: yolo26n-cls.pt
 BASE_DIR = Path(__file__).resolve().parent
-MODEL_PATH = BASE_DIR / "yolo26n-cls.pt"
+MODEL_PATH = Path(__file__).resolve().parent / "plant_model.pt"
 
 
 # ============================================================
