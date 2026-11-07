@@ -1,0 +1,686 @@
+[
+  {
+    "class_id": 0,
+    "class_name": "Apple___Apple_scab",
+    "plant": "Apple",
+    "disease_name": "Apple_scab",
+    "symptoms": {
+      "english": "Olive-green to dark brown spots appear on leaves and fruit. Severe infection may cause leaf drop and deformed fruit.",
+      "telugu": "ఆకులు మరియు పండ్లపై ఆలివ్ ఆకుపచ్చ నుండి ముదురు గోధుమ రంగు మచ్చలు కనిపిస్తాయి. తీవ్రమైన ఇన్ఫెక్షన్ వల్ల ఆకులు రాలిపోవచ్చు, పండ్లు ఆకారం కోల్పోవచ్చు."
+    },
+    "prevention": {
+      "english": "Remove fallen infected leaves, maintain orchard sanitation, and improve air circulation through pruning.",
+      "telugu": "వ్యాధి సోకిన రాలిన ఆకులను తొలగించండి. తోటను శుభ్రంగా ఉంచండి మరియు కొమ్మలను కత్తిరించడం ద్వారా గాలి ప్రసరణను మెరుగుపరచండి."
+    },
+    "management": {
+      "english": "Remove affected plant material and follow locally approved apple scab management recommendations from agricultural experts.",
+      "telugu": "వ్యాధి సోకిన మొక్క భాగాలను తొలగించండి. స్థానిక వ్యవసాయ నిపుణుల సూచనల ప్రకారం ఆపిల్ స్కాబ్ నియంత్రణ చర్యలను చేపట్టండి."
+    }
+  },
+  {
+    "class_id": 1,
+    "class_name": "Apple___Black_rot",
+    "plant": "Apple",
+    "disease_name": "Black_rot",
+    "symptoms": {
+      "english": "Brown or purple leaf spots, dead branches, and dark lesions on fruit may occur.",
+      "telugu": "ఆకులపై గోధుమ లేదా ఊదా రంగు మచ్చలు, ఎండిపోయిన కొమ్మలు మరియు పండ్లపై ముదురు గాయాలు కనిపించవచ్చు."
+    },
+    "prevention": {
+      "english": "Remove dead branches and mummified fruit. Keep pruning tools clean and maintain orchard sanitation.",
+      "telugu": "ఎండిపోయిన కొమ్మలు మరియు ఎండిపోయిన పండ్లను తొలగించండి. కత్తిరింపు పరికరాలను శుభ్రంగా ఉంచండి."
+    },
+    "management": {
+      "english": "Prune infected wood and seek expert guidance for approved disease-management measures.",
+      "telugu": "వ్యాధి సోకిన కొమ్మలను కత్తిరించండి. అనుమతించబడిన వ్యాధి నియంత్రణ చర్యల కోసం నిపుణుల సలహా పొందండి."
+    }
+  },
+  {
+    "class_id": 2,
+    "class_name": "Apple___Cedar_apple_rust",
+    "plant": "Apple",
+    "disease_name": "Cedar_apple_rust",
+    "symptoms": {
+      "english": "Yellow-orange spots may develop on apple leaves and fruit. Orange fungal structures may appear on the underside of leaves.",
+      "telugu": "ఆపిల్ ఆకులు మరియు పండ్లపై పసుపు-నారింజ రంగు మచ్చలు కనిపించవచ్చు. ఆకుల దిగువ భాగంలో నారింజ రంగు ఫంగస్ నిర్మాణాలు ఏర్పడవచ్చు."
+    },
+    "prevention": {
+      "english": "Remove nearby alternate host plants where appropriate and maintain good orchard sanitation.",
+      "telugu": "అవసరమైన చోట సమీపంలోని ప్రత్యామ్నాయ ఆతిథ్య మొక్కలను తొలగించండి. తోటను శుభ్రంగా ఉంచండి."
+    },
+    "management": {
+      "english": "Monitor symptoms and consult agricultural experts about locally approved management options.",
+      "telugu": "వ్యాధి లక్షణాలను గమనించండి. స్థానికంగా అనుమతించబడిన నియంత్రణ పద్ధతుల కోసం వ్యవసాయ నిపుణులను సంప్రదించండి."
+    }
+  },
+  {
+    "class_id": 3,
+    "class_name": "Apple___healthy",
+    "plant": "Apple",
+    "disease_name": "healthy",
+    "symptoms": {
+      "english": "Leaves appear generally green and healthy, with no obvious disease symptoms.",
+      "telugu": "ఆకులు సాధారణంగా పచ్చగా మరియు ఆరోగ్యంగా కనిపిస్తాయి. స్పష్టమైన వ్యాధి లక్షణాలు కనిపించవు."
+    },
+    "prevention": {
+      "english": "Provide balanced nutrition, adequate water, good sunlight, and regular plant monitoring.",
+      "telugu": "సమతుల్య పోషకాలు, తగినంత నీరు, సూర్యకాంతి అందించండి. మొక్కలను క్రమం తప్పకుండా పరిశీలించండి."
+    },
+    "management": {
+      "english": "Continue regular monitoring and maintain good orchard-care practices.",
+      "telugu": "క్రమం తప్పకుండా పరిశీలిస్తూ మంచి తోట నిర్వహణ పద్ధతులను కొనసాగించండి."
+    }
+  },
+  {
+    "class_id": 4,
+    "class_name": "Blueberry___healthy",
+    "plant": "Blueberry",
+    "disease_name": "healthy",
+    "symptoms": {
+      "english": "Leaves generally appear green and vigorous without clear disease symptoms.",
+      "telugu": "ఆకులు సాధారణంగా పచ్చగా మరియు ఆరోగ్యంగా కనిపిస్తాయి. స్పష్టమైన వ్యాధి లక్షణాలు ఉండవు."
+    },
+    "prevention": {
+      "english": "Maintain suitable soil conditions, adequate moisture, proper spacing, and regular monitoring.",
+      "telugu": "తగిన నేల పరిస్థితులు, తేమ, సరైన మొక్కల మధ్య దూరం మరియు క్రమమైన పరిశీలనను నిర్వహించండి."
+    },
+    "management": {
+      "english": "Continue appropriate crop care and investigate new symptoms if they appear.",
+      "telugu": "సరైన పంట సంరక్షణను కొనసాగించండి. కొత్త లక్షణాలు కనిపిస్తే పరిశీలించి నిపుణుల సలహా పొందండి."
+    }
+  },
+  {
+    "class_id": 5,
+    "class_name": "Cherry_(including_sour)___Powdery_mildew",
+    "plant": "Cherry_(including_sour)",
+    "disease_name": "Powdery_mildew",
+    "symptoms": {
+      "english": "White powdery fungal growth appears on leaves and young shoots. Leaves may curl or become distorted.",
+      "telugu": "ఆకులు మరియు చిన్న కొమ్మలపై తెల్లటి పొడి వంటి ఫంగస్ పెరుగుదల కనిపిస్తుంది. ఆకులు ముడుచుకోవచ్చు లేదా ఆకారం మారవచ్చు."
+    },
+    "prevention": {
+      "english": "Provide good air circulation, avoid excessive nitrogen, and remove severely affected plant material.",
+      "telugu": "మంచి గాలి ప్రసరణ ఉండేలా చూడండి. అధిక నైట్రోజన్‌ను నివారించండి. తీవ్రంగా ప్రభావితమైన మొక్క భాగాలను తొలగించండి."
+    },
+    "management": {
+      "english": "Monitor the crop regularly and consult agricultural experts about approved powdery mildew management options.",
+      "telugu": "పంటను క్రమం తప్పకుండా పరిశీలించండి. అనుమతించబడిన బూజు తెగులు నియంత్రణ పద్ధతుల కోసం వ్యవసాయ నిపుణులను సంప్రదించండి."
+    }
+  },
+  {
+    "class_id": 6,
+    "class_name": "Cherry_(including_sour)___healthy",
+    "plant": "Cherry_(including_sour)",
+    "disease_name": "healthy",
+    "symptoms": {
+      "english": "Leaves generally appear green and healthy without obvious disease symptoms.",
+      "telugu": "ఆకులు సాధారణంగా పచ్చగా మరియు ఆరోగ్యంగా కనిపిస్తాయి. స్పష్టమైన వ్యాధి లక్షణాలు కనిపించవు."
+    },
+    "prevention": {
+      "english": "Maintain proper watering, nutrition, sunlight, pruning, and regular crop monitoring.",
+      "telugu": "సరైన నీరు, పోషకాలు, సూర్యకాంతి, కొమ్మల కత్తిరింపు మరియు క్రమమైన పంట పరిశీలనను నిర్వహించండి."
+    },
+    "management": {
+      "english": "Continue regular crop care and investigate any new symptoms promptly.",
+      "telugu": "పంట సంరక్షణను కొనసాగించండి. కొత్త లక్షణాలు కనిపిస్తే వెంటనే పరిశీలించండి."
+    }
+  },
+  {
+    "class_id": 7,
+    "class_name": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+    "plant": "Corn_(maize)",
+    "disease_name": "Cercospora_leaf_spot Gray_leaf_spot",
+    "symptoms": {
+      "english": "Long, narrow gray or tan lesions may develop on maize leaves, reducing the effective leaf area.",
+      "telugu": "మొక్కజొన్న ఆకులపై పొడవైన, ఇరుకైన బూడిద లేదా లేత గోధుమ రంగు గాయాలు ఏర్పడవచ్చు. దీని వల్ల ఆకు క్రియాశీల ప్రాంతం తగ్గవచ్చు."
+    },
+    "prevention": {
+      "english": "Use suitable resistant varieties where available, manage crop residue, and maintain good field practices.",
+      "telugu": "అందుబాటులో ఉన్నప్పుడు తగిన నిరోధక రకాలను ఉపయోగించండి. పంట అవశేషాలను నిర్వహించండి మరియు మంచి పొల నిర్వహణ పద్ధతులను పాటించండి."
+    },
+    "management": {
+      "english": "Monitor disease development and consult local agricultural experts regarding approved management measures.",
+      "telugu": "వ్యాధి అభివృద్ధిని గమనించండి. అనుమతించబడిన నియంత్రణ చర్యల కోసం స్థానిక వ్యవసాయ నిపుణులను సంప్రదించండి."
+    }
+  },
+  {
+    "class_id": 8,
+    "class_name": "Corn_(maize)___Common_rust_",
+    "plant": "Corn_(maize)",
+    "disease_name": "Common_rust_",
+    "symptoms": {
+      "english": "Small reddish-brown or rust-colored pustules may appear on both sides of maize leaves.",
+      "telugu": "మొక్కజొన్న ఆకుల రెండు వైపులా చిన్న ఎరుపు-గోధుమ లేదా తుప్పు రంగు పొక్కులు కనిపించవచ్చు."
+    },
+    "prevention": {
+      "english": "Use suitable resistant varieties where available and monitor plants regularly during favorable weather conditions.",
+      "telugu": "అందుబాటులో ఉన్నప్పుడు తగిన నిరోధక రకాలను ఉపయోగించండి. అనుకూల వాతావరణ పరిస్థితుల్లో మొక్కలను క్రమం తప్పకుండా పరిశీలించండి."
+    },
+    "management": {
+      "english": "Assess disease severity and obtain local expert guidance before using any approved treatment.",
+      "telugu": "వ్యాధి తీవ్రతను అంచనా వేయండి. అనుమతించబడిన చికిత్సను ఉపయోగించే ముందు స్థానిక నిపుణుల సలహా పొందండి."
+    }
+  },
+  {
+    "class_id": 9,
+    "class_name": "Corn_(maize)___Northern_Leaf_Blight",
+    "plant": "Corn_(maize)",
+    "disease_name": "Northern_Leaf_Blight",
+    "symptoms": {
+      "english": "Long, cigar-shaped gray-green or brown lesions may appear on maize leaves.",
+      "telugu": "మొక్కజొన్న ఆకులపై పొడవైన సిగార్ ఆకారంలో బూడిద-ఆకుపచ్చ లేదా గోధుమ రంగు గాయాలు కనిపించవచ్చు."
+    },
+    "prevention": {
+      "english": "Use suitable resistant varieties, manage infected crop residue, and maintain good crop rotation practices.",
+      "telugu": "తగిన నిరోధక రకాలను ఉపయోగించండి. వ్యాధి సోకిన పంట అవశేషాలను నిర్వహించండి మరియు మంచి పంట మార్పిడి పద్ధతులను పాటించండి."
+    },
+    "management": {
+      "english": "Monitor symptoms and consult agricultural experts about locally approved disease-management options.",
+      "telugu": "వ్యాధి లక్షణాలను గమనించండి. స్థానికంగా అనుమతించబడిన వ్యాధి నియంత్రణ పద్ధతుల కోసం వ్యవసాయ నిపుణులను సంప్రదించండి."
+    }
+  },
+  {
+    "class_id": 10,
+    "class_name": "Corn_(maize)___healthy",
+    "plant": "Corn_(maize)",
+    "disease_name": "healthy",
+    "symptoms": {
+      "english": "Leaves appear green and healthy without obvious disease symptoms.",
+      "telugu": "ఆకులు పచ్చగా మరియు ఆరోగ్యంగా కనిపిస్తాయి. స్పష్టమైన వ్యాధి లక్షణాలు కనిపించవు."
+    },
+    "prevention": {
+      "english": "Maintain balanced nutrition, proper irrigation, weed control, and regular crop monitoring.",
+      "telugu": "సమతుల్య పోషకాలు, సరైన నీటిపారుదల, కలుపు నియంత్రణ మరియు క్రమమైన పంట పరిశీలనను నిర్వహించండి."
+    },
+    "management": {
+      "english": "Continue regular crop care and monitor for any new symptoms.",
+      "telugu": "పంట సంరక్షణను కొనసాగించండి మరియు కొత్త లక్షణాల కోసం పరిశీలించండి."
+    }
+  },
+  {
+    "class_id": 11,
+    "class_name": "Grape___Black_rot",
+    "plant": "Grape",
+    "disease_name": "Black_rot",
+    "symptoms": {
+      "english": "Brown leaf spots and dark, shriveled lesions on grapes may develop.",
+      "telugu": "ఆకులపై గోధుమ రంగు మచ్చలు మరియు ద్రాక్షపై ముదురు, ముడుచుకున్న గాయాలు ఏర్పడవచ్చు."
+    },
+    "prevention": {
+      "english": "Remove infected plant material, improve air circulation, and maintain vineyard sanitation.",
+      "telugu": "వ్యాధి సోకిన మొక్క భాగాలను తొలగించండి. గాలి ప్రసరణను మెరుగుపరచండి మరియు ద్రాక్ష తోటను శుభ్రంగా ఉంచండి."
+    },
+    "management": {
+      "english": "Monitor the vineyard and consult agricultural experts about approved black rot management methods.",
+      "telugu": "ద్రాక్ష తోటను పరిశీలించండి. అనుమతించబడిన బ్లాక్ రాట్ నియంత్రణ పద్ధతుల కోసం వ్యవసాయ నిపుణులను సంప్రదించండి."
+    }
+  },
+  {
+    "class_id": 12,
+    "class_name": "Grape___Esca_(Black_Measles)",
+    "plant": "Grape",
+    "disease_name": "Esca_(Black_Measles)",
+    "symptoms": {
+      "english": "Leaves may show yellowing, striped patterns, or dead areas. Dark spots may appear on grapes.",
+      "telugu": "ఆకులపై పసుపు రంగు మార్పులు, చారల నమూనాలు లేదా ఎండిపోయిన ప్రాంతాలు కనిపించవచ్చు. ద్రాక్షపై ముదురు మచ్చలు ఏర్పడవచ్చు."
+    },
+    "prevention": {
+      "english": "Use healthy planting material, avoid unnecessary trunk injuries, and remove severely affected vines where advised.",
+      "telugu": "ఆరోగ్యకరమైన నాటే పదార్థాన్ని ఉపయోగించండి. కాండానికి అనవసరమైన గాయాలు కలగకుండా చూడండి."
+    },
+    "management": {
+      "english": "Seek expert guidance because management depends on disease severity and vineyard conditions.",
+      "telugu": "వ్యాధి తీవ్రత మరియు ద్రాక్ష తోట పరిస్థితులపై నియంత్రణ ఆధారపడుతుంది కాబట్టి నిపుణుల సలహా పొందండి."
+    }
+  },
+  {
+    "class_id": 13,
+    "class_name": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+    "plant": "Grape",
+    "disease_name": "Leaf_blight_(Isariopsis_Leaf_Spot)",
+    "symptoms": {
+      "english": "Brown or reddish leaf spots may develop and affected leaves may dry or fall.",
+      "telugu": "ఆకులపై గోధుమ లేదా ఎరుపు రంగు మచ్చలు ఏర్పడవచ్చు. ప్రభావిత ఆకులు ఎండిపోయి రాలిపోవచ్చు."
+    },
+    "prevention": {
+      "english": "Remove infected leaves, improve air circulation, and avoid prolonged leaf wetness.",
+      "telugu": "వ్యాధి సోకిన ఆకులను తొలగించండి. గాలి ప్రసరణను మెరుగుపరచండి మరియు ఆకులు ఎక్కువసేపు తడిగా ఉండకుండా చూడండి."
+    },
+    "management": {
+      "english": "Monitor symptoms and consult local agricultural experts about approved disease-management options.",
+      "telugu": "వ్యాధి లక్షణాలను పరిశీలించండి. అనుమతించబడిన నియంత్రణ పద్ధతుల కోసం స్థానిక వ్యవసాయ నిపుణులను సంప్రదించండి."
+    }
+  },
+  {
+    "class_id": 14,
+    "class_name": "Grape___healthy",
+    "plant": "Grape",
+    "disease_name": "healthy",
+    "symptoms": {
+      "english": "Leaves appear generally green and healthy without obvious disease symptoms.",
+      "telugu": "ఆకులు సాధారణంగా పచ్చగా మరియు ఆరోగ్యంగా కనిపిస్తాయి. స్పష్టమైన వ్యాధి లక్షణాలు కనిపించవు."
+    },
+    "prevention": {
+      "english": "Maintain proper irrigation, nutrition, pruning, air circulation, and regular vineyard monitoring.",
+      "telugu": "సరైన నీటిపారుదల, పోషకాలు, కొమ్మల కత్తిరింపు, గాలి ప్రసరణ మరియు క్రమమైన తోట పరిశీలనను నిర్వహించండి."
+    },
+    "management": {
+      "english": "Continue routine vineyard care and investigate new symptoms promptly.",
+      "telugu": "ద్రాక్ష తోట సంరక్షణను కొనసాగించండి. కొత్త లక్షణాలు కనిపిస్తే వెంటనే పరిశీలించండి."
+    }
+  },
+  {
+    "class_id": 15,
+    "class_name": "Orange___Haunglongbing_(Citrus_greening)",
+    "plant": "Orange",
+    "disease_name": "Haunglongbing_(Citrus_greening)",
+    "symptoms": {
+      "english": "Leaves may show irregular yellowing, blotchy patterns, and reduced growth. Fruit may be small or unevenly colored.",
+      "telugu": "ఆకులపై అసమాన పసుపు రంగు మార్పులు మరియు మచ్చల నమూనాలు కనిపించవచ్చు. పండ్లు చిన్నగా లేదా అసమాన రంగులో ఉండవచ్చు."
+    },
+    "prevention": {
+      "english": "Use healthy certified planting material, monitor for insect vectors, and remove affected trees according to local guidance.",
+      "telugu": "ఆరోగ్యకరమైన ధృవీకరించబడిన నాటే పదార్థాన్ని ఉపయోగించండి. కీటక వాహకాలను పరిశీలించండి మరియు స్థానిక సూచనల ప్రకారం ప్రభావిత చెట్లను నిర్వహించండి."
+    },
+    "management": {
+      "english": "Consult plant-health authorities or agricultural experts promptly because citrus greening is a serious systemic disease.",
+      "telugu": "సిట్రస్ గ్రీనింగ్ తీవ్రమైన వ్యవస్థాత్మక వ్యాధి కాబట్టి వెంటనే మొక్కల ఆరోగ్య అధికారులు లేదా వ్యవసాయ నిపుణులను సంప్రదించండి."
+    }
+  },
+  {
+    "class_id": 16,
+    "class_name": "Peach___Bacterial_spot",
+    "plant": "Peach",
+    "disease_name": "Bacterial_spot",
+    "symptoms": {
+      "english": "Small dark spots may appear on leaves and fruit. Severe leaf infection may cause premature leaf drop.",
+      "telugu": "ఆకులు మరియు పండ్లపై చిన్న ముదురు మచ్చలు కనిపించవచ్చు. తీవ్రమైన ఇన్ఫెక్షన్ వల్ల ఆకులు ముందుగానే రాలిపోవచ్చు."
+    },
+    "prevention": {
+      "english": "Use suitable varieties, maintain good air circulation, and avoid unnecessary leaf wetness.",
+      "telugu": "తగిన రకాలను ఉపయోగించండి. మంచి గాలి ప్రసరణను నిర్వహించండి మరియు ఆకులు అనవసరంగా తడిగా ఉండకుండా చూడండి."
+    },
+    "management": {
+      "english": "Remove severely affected material where appropriate and consult experts about locally approved management practices.",
+      "telugu": "అవసరమైన చోట తీవ్రంగా ప్రభావితమైన మొక్క భాగాలను తొలగించండి. స్థానికంగా అనుమతించబడిన నియంత్రణ పద్ధతుల కోసం నిపుణులను సంప్రదించండి."
+    }
+  },
+  {
+    "class_id": 17,
+    "class_name": "Peach___healthy",
+    "plant": "Peach",
+    "disease_name": "healthy",
+    "symptoms": {
+      "english": "Leaves appear green and healthy without clear disease symptoms.",
+      "telugu": "ఆకులు పచ్చగా మరియు ఆరోగ్యంగా కనిపిస్తాయి. స్పష్టమైన వ్యాధి లక్షణాలు ఉండవు."
+    },
+    "prevention": {
+      "english": "Provide appropriate irrigation, nutrition, sunlight, pruning, and regular monitoring.",
+      "telugu": "తగిన నీరు, పోషకాలు, సూర్యకాంతి, కొమ్మల కత్తిరింపు మరియు క్రమమైన పరిశీలనను అందించండి."
+    },
+    "management": {
+      "english": "Continue regular orchard care and monitor for changes in plant health.",
+      "telugu": "తోట సంరక్షణను కొనసాగించండి మరియు మొక్క ఆరోగ్యంలో మార్పులను గమనించండి."
+    }
+  },
+  {
+    "class_id": 18,
+    "class_name": "Pepper,_bell___Bacterial_spot",
+    "plant": "Pepper,_bell",
+    "disease_name": "Bacterial_spot",
+    "symptoms": {
+      "english": "Small water-soaked or dark spots may appear on leaves and fruit. Spots may enlarge under favorable conditions.",
+      "telugu": "ఆకులు మరియు పండ్లపై చిన్న నీటితో తడిసినట్లు కనిపించే లేదా ముదురు మచ్చలు ఏర్పడవచ్చు. అనుకూల పరిస్థితుల్లో మచ్చలు పెద్దవిగా మారవచ్చు."
+    },
+    "prevention": {
+      "english": "Use healthy seeds and transplants, avoid overhead irrigation, and maintain field sanitation.",
+      "telugu": "ఆరోగ్యకరమైన విత్తనాలు మరియు మొక్కలను ఉపయోగించండి. పై నుంచి నీరు పోయడాన్ని నివారించండి మరియు పొలాన్ని శుభ్రంగా ఉంచండి."
+    },
+    "management": {
+      "english": "Remove severely affected material where appropriate and seek expert guidance for approved management options.",
+      "telugu": "అవసరమైన చోట తీవ్రంగా ప్రభావితమైన మొక్క భాగాలను తొలగించండి. అనుమతించబడిన నియంత్రణ పద్ధతుల కోసం నిపుణుల సలహా పొందండి."
+    }
+  },
+  {
+    "class_id": 19,
+    "class_name": "Pepper,_bell___healthy",
+    "plant": "Pepper,_bell",
+    "disease_name": "healthy",
+    "symptoms": {
+      "english": "Leaves appear green and healthy without obvious disease symptoms.",
+      "telugu": "ఆకులు పచ్చగా మరియు ఆరోగ్యంగా కనిపిస్తాయి. స్పష్టమైన వ్యాధి లక్షణాలు కనిపించవు."
+    },
+    "prevention": {
+      "english": "Maintain proper watering, nutrition, spacing, weed control, and regular monitoring.",
+      "telugu": "సరైన నీటిపారుదల, పోషకాలు, మొక్కల మధ్య దూరం, కలుపు నియంత్రణ మరియు క్రమమైన పరిశీలనను నిర్వహించండి."
+    },
+    "management": {
+      "english": "Continue normal crop care and investigate any new symptoms.",
+      "telugu": "సాధారణ పంట సంరక్షణను కొనసాగించండి మరియు కొత్త లక్షణాలను పరిశీలించండి."
+    }
+  },
+  {
+    "class_id": 20,
+    "class_name": "Potato___Early_blight",
+    "plant": "Potato",
+    "disease_name": "Early_blight",
+    "symptoms": {
+      "english": "Dark brown circular spots with concentric rings may appear on older leaves.",
+      "telugu": "బంగాళాదుంప మొక్కల పాత ఆకులపై ముదురు గోధుమ రంగు వృత్తాకార మచ్చలు, వలయాల నమూనాతో కనిపించవచ్చు."
+    },
+    "prevention": {
+      "english": "Use healthy planting material, maintain field sanitation, and avoid prolonged leaf wetness.",
+      "telugu": "ఆరోగ్యకరమైన నాటే పదార్థాన్ని ఉపయోగించండి. పొలాన్ని శుభ్రంగా ఉంచండి మరియు ఆకులు ఎక్కువసేపు తడిగా ఉండకుండా చూడండి."
+    },
+    "management": {
+      "english": "Monitor disease development and consult agricultural experts about approved management options.",
+      "telugu": "వ్యాధి అభివృద్ధిని గమనించండి. అనుమతించబడిన నియంత్రణ పద్ధతుల కోసం వ్యవసాయ నిపుణులను సంప్రదించండి."
+    }
+  },
+  {
+    "class_id": 21,
+    "class_name": "Potato___Late_blight",
+    "plant": "Potato",
+    "disease_name": "Late_blight",
+    "symptoms": {
+      "english": "Water-soaked dark lesions may appear on leaves and stems. White fungal growth may develop under humid conditions.",
+      "telugu": "ఆకులు మరియు కాండంపై నీటితో తడిసినట్లు కనిపించే ముదురు గాయాలు ఏర్పడవచ్చు. తేమ ఎక్కువగా ఉన్నప్పుడు తెల్లటి ఫంగస్ పెరుగుదల కనిపించవచ్చు."
+    },
+    "prevention": {
+      "english": "Use healthy seed potatoes, improve field drainage, monitor weather conditions, and remove infected plant material where appropriate.",
+      "telugu": "ఆరోగ్యకరమైన విత్తన బంగాళాదుంపలను ఉపయోగించండి. పొలంలో నీటి పారుదల మెరుగుపరచండి మరియు వ్యాధి సోకిన మొక్క భాగాలను తగిన విధంగా తొలగించండి."
+    },
+    "management": {
+      "english": "Seek immediate local agricultural guidance because late blight can spread rapidly under favorable conditions.",
+      "telugu": "లేట్ బ్లైట్ అనుకూల పరిస్థితుల్లో వేగంగా వ్యాపించవచ్చు కాబట్టి వెంటనే స్థానిక వ్యవసాయ నిపుణుల సలహా పొందండి."
+    }
+  },
+  {
+    "class_id": 22,
+    "class_name": "Potato___healthy",
+    "plant": "Potato",
+    "disease_name": "healthy",
+    "symptoms": {
+      "english": "Leaves appear green and healthy without obvious disease symptoms.",
+      "telugu": "ఆకులు పచ్చగా మరియు ఆరోగ్యంగా కనిపిస్తాయి. స్పష్టమైన వ్యాధి లక్షణాలు కనిపించవు."
+    },
+    "prevention": {
+      "english": "Use healthy seed material, maintain proper irrigation and nutrition, and monitor plants regularly.",
+      "telugu": "ఆరోగ్యకరమైన విత్తన పదార్థాన్ని ఉపయోగించండి. సరైన నీటిపారుదల, పోషకాలు మరియు క్రమమైన పరిశీలనను నిర్వహించండి."
+    },
+    "management": {
+      "english": "Continue regular crop care and monitor for changes in plant health.",
+      "telugu": "పంట సంరక్షణను కొనసాగించండి మరియు మొక్క ఆరోగ్యంలో మార్పులను గమనించండి."
+    }
+  },
+  {
+    "class_id": 23,
+    "class_name": "Raspberry___healthy",
+    "plant": "Raspberry",
+    "disease_name": "healthy",
+    "symptoms": {
+      "english": "Leaves appear generally green and healthy without obvious disease symptoms.",
+      "telugu": "ఆకులు సాధారణంగా పచ్చగా మరియు ఆరోగ్యంగా కనిపిస్తాయి. స్పష్టమైన వ్యాధి లక్షణాలు కనిపించవు."
+    },
+    "prevention": {
+      "english": "Maintain good air circulation, appropriate watering, balanced nutrition, and regular monitoring.",
+      "telugu": "మంచి గాలి ప్రసరణ, సరైన నీటిపారుదల, సమతుల్య పోషకాలు మరియు క్రమమైన పరిశీలనను నిర్వహించండి."
+    },
+    "management": {
+      "english": "Continue routine crop care and investigate any new symptoms.",
+      "telugu": "సాధారణ పంట సంరక్షణను కొనసాగించండి మరియు కొత్త లక్షణాలను పరిశీలించండి."
+    }
+  },
+  {
+    "class_id": 24,
+    "class_name": "Soybean___healthy",
+    "plant": "Soybean",
+    "disease_name": "healthy",
+    "symptoms": {
+      "english": "Leaves appear green and healthy without clear disease symptoms.",
+      "telugu": "ఆకులు పచ్చగా మరియు ఆరోగ్యంగా కనిపిస్తాయి. స్పష్టమైన వ్యాధి లక్షణాలు కనిపించవు."
+    },
+    "prevention": {
+      "english": "Use suitable seed, maintain balanced nutrition, manage weeds, and monitor crop health regularly.",
+      "telugu": "తగిన విత్తనాలను ఉపయోగించండి. సమతుల్య పోషకాలు, కలుపు నియంత్రణ మరియు క్రమమైన పంట పరిశీలనను నిర్వహించండి."
+    },
+    "management": {
+      "english": "Continue appropriate crop care and monitor for emerging symptoms.",
+      "telugu": "సరైన పంట సంరక్షణను కొనసాగించండి మరియు కొత్త లక్షణాల కోసం పరిశీలించండి."
+    }
+  },
+  {
+    "class_id": 25,
+    "class_name": "Squash___Powdery_mildew",
+    "plant": "Squash",
+    "disease_name": "Powdery_mildew",
+    "symptoms": {
+      "english": "White powdery patches may appear on leaves and stems. Affected leaves may become yellow or dry.",
+      "telugu": "ఆకులు మరియు కాండంపై తెల్లటి పొడి వంటి మచ్చలు కనిపించవచ్చు. ప్రభావిత ఆకులు పసుపు రంగులోకి మారవచ్చు లేదా ఎండిపోవచ్చు."
+    },
+    "prevention": {
+      "english": "Provide adequate plant spacing, improve air circulation, and avoid excessive nitrogen fertilization.",
+      "telugu": "మొక్కల మధ్య తగినంత దూరం ఉంచండి. గాలి ప్రసరణను మెరుగుపరచండి మరియు అధిక నైట్రోజన్ ఎరువులను నివారించండి."
+    },
+    "management": {
+      "english": "Monitor the crop and consult local experts about approved powdery mildew management practices.",
+      "telugu": "పంటను పరిశీలించండి. అనుమతించబడిన బూజు తెగులు నియంత్రణ పద్ధతుల కోసం స్థానిక నిపుణులను సంప్రదించండి."
+    }
+  },
+  {
+    "class_id": 26,
+    "class_name": "Strawberry___Leaf_scorch",
+    "plant": "Strawberry",
+    "disease_name": "Leaf_scorch",
+    "symptoms": {
+      "english": "Dark purple or brown spots may develop on leaves, sometimes causing affected areas to dry.",
+      "telugu": "ఆకులపై ముదురు ఊదా లేదా గోధుమ రంగు మచ్చలు ఏర్పడవచ్చు. ప్రభావిత ప్రాంతాలు ఎండిపోవచ్చు."
+    },
+    "prevention": {
+      "english": "Maintain field sanitation, provide good air circulation, and avoid unnecessary leaf wetness.",
+      "telugu": "పొలాన్ని శుభ్రంగా ఉంచండి. మంచి గాలి ప్రసరణను నిర్వహించండి మరియు ఆకులు అనవసరంగా తడిగా ఉండకుండా చూడండి."
+    },
+    "management": {
+      "english": "Remove severely affected leaves where appropriate and seek expert guidance for approved management options.",
+      "telugu": "అవసరమైన చోట తీవ్రంగా ప్రభావితమైన ఆకులను తొలగించండి. అనుమతించబడిన నియంత్రణ పద్ధతుల కోసం నిపుణుల సలహా పొందండి."
+    }
+  },
+  {
+    "class_id": 27,
+    "class_name": "Strawberry___healthy",
+    "plant": "Strawberry",
+    "disease_name": "healthy",
+    "symptoms": {
+      "english": "Leaves appear green and healthy without obvious disease symptoms.",
+      "telugu": "ఆకులు పచ్చగా మరియు ఆరోగ్యంగా కనిపిస్తాయి. స్పష్టమైన వ్యాధి లక్షణాలు కనిపించవు."
+    },
+    "prevention": {
+      "english": "Use healthy planting material, maintain appropriate watering and spacing, and monitor plants regularly.",
+      "telugu": "ఆరోగ్యకరమైన నాటే పదార్థాన్ని ఉపయోగించండి. సరైన నీటిపారుదల, మొక్కల మధ్య దూరం మరియు క్రమమైన పరిశీలనను నిర్వహించండి."
+    },
+    "management": {
+      "english": "Continue regular crop care and investigate any new symptoms.",
+      "telugu": "పంట సంరక్షణను కొనసాగించండి మరియు కొత్త లక్షణాలను పరిశీలించండి."
+    }
+  },
+  {
+    "class_id": 28,
+    "class_name": "Tomato___Bacterial_spot",
+    "plant": "Tomato",
+    "disease_name": "Bacterial_spot",
+    "symptoms": {
+      "english": "Small dark spots may appear on tomato leaves, stems, and fruit. Spots may enlarge under favorable conditions.",
+      "telugu": "టమాటా ఆకులు, కాండం మరియు పండ్లపై చిన్న ముదురు మచ్చలు ఏర్పడవచ్చు. అనుకూల పరిస్థితుల్లో మచ్చలు పెద్దవిగా మారవచ్చు."
+    },
+    "prevention": {
+      "english": "Use healthy seeds and transplants, avoid overhead irrigation, and maintain good field sanitation.",
+      "telugu": "ఆరోగ్యకరమైన విత్తనాలు మరియు మొక్కలను ఉపయోగించండి. పై నుంచి నీరు పోయడాన్ని నివారించండి మరియు పొలాన్ని శుభ్రంగా ఉంచండి."
+    },
+    "management": {
+      "english": "Remove severely affected material where appropriate and consult experts about locally approved management practices.",
+      "telugu": "అవసరమైన చోట తీవ్రంగా ప్రభావితమైన మొక్క భాగాలను తొలగించండి. స్థానికంగా అనుమతించబడిన నియంత్రణ పద్ధతుల కోసం నిపుణులను సంప్రదించండి."
+    }
+  },
+  {
+    "class_id": 29,
+    "class_name": "Tomato___Early_blight",
+    "plant": "Tomato",
+    "disease_name": "Early_blight",
+    "symptoms": {
+      "english": "Brown spots with concentric rings may appear on older tomato leaves. Severe infection can cause leaf loss.",
+      "telugu": "టమాటా మొక్కల పాత ఆకులపై వలయాల నమూనాతో గోధుమ రంగు మచ్చలు కనిపించవచ్చు. తీవ్రమైన ఇన్ఫెక్షన్ వల్ల ఆకులు రాలిపోవచ్చు."
+    },
+    "prevention": {
+      "english": "Maintain field sanitation, provide adequate plant spacing, avoid prolonged leaf wetness, and rotate crops where possible.",
+      "telugu": "పొలాన్ని శుభ్రంగా ఉంచండి. మొక్కల మధ్య తగినంత దూరం ఉంచండి. ఆకులు ఎక్కువసేపు తడిగా ఉండకుండా చూడండి మరియు సాధ్యమైనప్పుడు పంట మార్పిడి చేయండి."
+    },
+    "management": {
+      "english": "Monitor symptoms and consult agricultural experts about approved early blight management options.",
+      "telugu": "వ్యాధి లక్షణాలను గమనించండి. అనుమతించబడిన ఎర్లీ బ్లైట్ నియంత్రణ పద్ధతుల కోసం వ్యవసాయ నిపుణులను సంప్రదించండి."
+    }
+  },
+  {
+    "class_id": 30,
+    "class_name": "Tomato___Late_blight",
+    "plant": "Tomato",
+    "disease_name": "Late_blight",
+    "symptoms": {
+      "english": "Water-soaked dark lesions may appear on leaves and stems. White fungal growth may develop in humid conditions.",
+      "telugu": "టమాటా ఆకులు మరియు కాండంపై నీటితో తడిసినట్లు కనిపించే ముదురు గాయాలు ఏర్పడవచ్చు. తేమ ఉన్నప్పుడు తెల్లటి ఫంగస్ పెరుగుదల కనిపించవచ్చు."
+    },
+    "prevention": {
+      "english": "Use healthy planting material, maintain field sanitation, and monitor weather and crop conditions.",
+      "telugu": "ఆరోగ్యకరమైన నాటే పదార్థాన్ని ఉపయోగించండి. పొలాన్ని శుభ్రంగా ఉంచండి మరియు వాతావరణం, పంట పరిస్థితులను గమనించండి."
+    },
+    "management": {
+      "english": "Seek prompt agricultural expert guidance because late blight can spread rapidly.",
+      "telugu": "లేట్ బ్లైట్ వేగంగా వ్యాపించవచ్చు కాబట్టి వెంటనే వ్యవసాయ నిపుణుల సలహా పొందండి."
+    }
+  },
+  {
+    "class_id": 31,
+    "class_name": "Tomato___Leaf_Mold",
+    "plant": "Tomato",
+    "disease_name": "Leaf_Mold",
+    "symptoms": {
+      "english": "Yellowish spots may appear on the upper leaf surface, with olive-green or brown growth underneath.",
+      "telugu": "ఆకుల పైభాగంలో పసుపు రంగు మచ్చలు కనిపించవచ్చు. ఆకుల దిగువ భాగంలో ఆలివ్ ఆకుపచ్చ లేదా గోధుమ రంగు పెరుగుదల ఉండవచ్చు."
+    },
+    "prevention": {
+      "english": "Improve ventilation, avoid excessive humidity, and maintain suitable plant spacing.",
+      "telugu": "గాలి ప్రసరణను మెరుగుపరచండి. అధిక తేమను నివారించండి మరియు మొక్కల మధ్య తగినంత దూరం ఉంచండి."
+    },
+    "management": {
+      "english": "Remove severely affected material where appropriate and consult experts about approved management options.",
+      "telugu": "అవసరమైన చోట తీవ్రంగా ప్రభావితమైన మొక్క భాగాలను తొలగించండి. అనుమతించబడిన నియంత్రణ పద్ధతుల కోసం నిపుణులను సంప్రదించండి."
+    }
+  },
+  {
+    "class_id": 32,
+    "class_name": "Tomato___Septoria_leaf_spot",
+    "plant": "Tomato",
+    "disease_name": "Septoria_leaf_spot",
+    "symptoms": {
+      "english": "Small circular leaf spots with dark borders may develop. Spots may contain tiny dark centers.",
+      "telugu": "టమాటా ఆకులపై ముదురు అంచులతో చిన్న వృత్తాకార మచ్చలు ఏర్పడవచ్చు. మచ్చల మధ్యలో చిన్న ముదురు భాగాలు కనిపించవచ్చు."
+    },
+    "prevention": {
+      "english": "Remove infected plant debris, maintain sanitation, and avoid unnecessary leaf wetness.",
+      "telugu": "వ్యాధి సోకిన మొక్క అవశేషాలను తొలగించండి. పరిశుభ్రతను పాటించండి మరియు ఆకులు అనవసరంగా తడిగా ఉండకుండా చూడండి."
+    },
+    "management": {
+      "english": "Monitor the crop and consult agricultural experts about approved management practices.",
+      "telugu": "పంటను పరిశీలించండి. అనుమతించబడిన నియంత్రణ పద్ధతుల కోసం వ్యవసాయ నిపుణులను సంప్రదించండి."
+    }
+  },
+  {
+    "class_id": 33,
+    "class_name": "Tomato___Spider_mites Two-spotted_spider_mite",
+    "plant": "Tomato",
+    "disease_name": "Spider_mites Two-spotted_spider_mite",
+    "symptoms": {
+      "english": "Fine yellow speckling may appear on leaves. Severe infestations can cause leaf drying and webbing.",
+      "telugu": "ఆకులపై చిన్న పసుపు రంగు చుక్కలు కనిపించవచ్చు. తీవ్రమైన పురుగు దాడి వల్ల ఆకులు ఎండిపోవచ్చు మరియు సన్నని జాలాలు కనిపించవచ్చు."
+    },
+    "prevention": {
+      "english": "Monitor the undersides of leaves, reduce plant stress, and encourage suitable beneficial organisms where possible.",
+      "telugu": "ఆకుల దిగువ భాగాన్ని పరిశీలించండి. మొక్కలపై ఒత్తిడిని తగ్గించండి మరియు సాధ్యమైనప్పుడు ఉపయోగకరమైన జీవులను ప్రోత్సహించండి."
+    },
+    "management": {
+      "english": "Confirm the pest before treatment and consult experts about locally approved control options.",
+      "telugu": "చికిత్సకు ముందు పురుగును నిర్ధారించండి. స్థానికంగా అనుమతించబడిన నియంత్రణ పద్ధతుల కోసం నిపుణులను సంప్రదించండి."
+    }
+  },
+  {
+    "class_id": 34,
+    "class_name": "Tomato___Target_Spot",
+    "plant": "Tomato",
+    "disease_name": "Target_Spot",
+    "symptoms": {
+      "english": "Brown circular spots with concentric patterns may appear on leaves, stems, or fruit.",
+      "telugu": "టమాటా ఆకులు, కాండం లేదా పండ్లపై వలయాల నమూనాతో గోధుమ రంగు వృత్తాకార మచ్చలు ఏర్పడవచ్చు."
+    },
+    "prevention": {
+      "english": "Maintain field sanitation, provide adequate spacing, and avoid prolonged leaf wetness.",
+      "telugu": "పొలాన్ని శుభ్రంగా ఉంచండి. తగినంత మొక్కల మధ్య దూరం ఉంచండి మరియు ఆకులు ఎక్కువసేపు తడిగా ఉండకుండా చూడండి."
+    },
+    "management": {
+      "english": "Monitor symptoms and consult agricultural experts about approved disease-management options.",
+      "telugu": "వ్యాధి లక్షణాలను గమనించండి. అనుమతించబడిన నియంత్రణ పద్ధతుల కోసం వ్యవసాయ నిపుణులను సంప్రదించండి."
+    }
+  },
+  {
+    "class_id": 35,
+    "class_name": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+    "plant": "Tomato",
+    "disease_name": "Tomato_Yellow_Leaf_Curl_Virus",
+    "symptoms": {
+      "english": "Leaves may curl upward, become yellow, and show reduced growth. Plants may remain small.",
+      "telugu": "ఆకులు పైకి ముడుచుకోవచ్చు, పసుపు రంగులోకి మారవచ్చు మరియు ఎదుగుదల తగ్గవచ్చు. మొక్కలు చిన్నగా ఉండవచ్చు."
+    },
+    "prevention": {
+      "english": "Use healthy planting material, monitor whitefly populations, and remove severely affected plants according to local guidance.",
+      "telugu": "ఆరోగ్యకరమైన నాటే పదార్థాన్ని ఉపయోగించండి. తెల్లదోమల సంఖ్యను గమనించండి మరియు స్థానిక సూచనల ప్రకారం తీవ్రంగా ప్రభావితమైన మొక్కలను నిర్వహించండి."
+    },
+    "management": {
+      "english": "Seek expert guidance because viral diseases generally require prevention and vector management.",
+      "telugu": "వైరస్ వ్యాధులకు సాధారణంగా నివారణ మరియు వాహక పురుగు నియంత్రణ అవసరం కాబట్టి నిపుణుల సలహా పొందండి."
+    }
+  },
+  {
+    "class_id": 36,
+    "class_name": "Tomato___Tomato_mosaic_virus",
+    "plant": "Tomato",
+    "disease_name": "Tomato_mosaic_virus",
+    "symptoms": {
+      "english": "Leaves may show mosaic patterns, mottling, distortion, and reduced plant growth.",
+      "telugu": "ఆకులపై మోసాయిక్ నమూనాలు, రంగు మార్పులు, ఆకార మార్పులు మరియు మొక్క ఎదుగుదల తగ్గడం కనిపించవచ్చు."
+    },
+    "prevention": {
+      "english": "Use clean planting material, sanitize tools, and avoid spreading plant sap between plants.",
+      "telugu": "శుభ్రమైన నాటే పదార్థాన్ని ఉపయోగించండి. పరికరాలను శుభ్రపరచండి మరియు మొక్కల మధ్య రసం వ్యాప్తి చెందకుండా చూడండి."
+    },
+    "management": {
+      "english": "Remove suspected infected plants where appropriate and consult agricultural experts for local guidance.",
+      "telugu": "అవసరమైన చోట వైరస్ సోకినట్లు అనుమానిస్తున్న మొక్కలను తొలగించండి. స్థానిక సూచనల కోసం వ్యవసాయ నిపుణులను సంప్రదించండి."
+    }
+  },
+  {
+    "class_id": 37,
+    "class_name": "Tomato___healthy",
+    "plant": "Tomato",
+    "disease_name": "healthy",
+    "symptoms": {
+      "english": "Leaves appear green and healthy without obvious disease symptoms.",
+      "telugu": "ఆకులు పచ్చగా మరియు ఆరోగ్యంగా కనిపిస్తాయి. స్పష్టమైన వ్యాధి లక్షణాలు కనిపించవు."
+    },
+    "prevention": {
+      "english": "Maintain proper watering, nutrition, spacing, sanitation, and regular crop monitoring.",
+      "telugu": "సరైన నీటిపారుదల, పోషకాలు, మొక్కల మధ్య దూరం, పరిశుభ్రత మరియు క్రమమైన పంట పరిశీలనను నిర్వహించండి."
+    },
+    "management": {
+      "english": "Continue regular crop care and investigate any new symptoms promptly.",
+      "telugu": "పంట సంరక్షణను కొనసాగించండి మరియు కొత్త లక్షణాలు కనిపిస్తే వెంటనే పరిశీలించండి."
+    }
+  }
+]

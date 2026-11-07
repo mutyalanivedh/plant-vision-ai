@@ -1,8 +1,18 @@
 import streamlit as st
-from ultralytics import YOLO
+from datetime import datetime
+import requests
+from prediction_history import save_prediction
+from history_viewer import get_prediction_history, filter_prediction_history
+from io import BytesIO
 from PIL import Image
 from pathlib import Path
-
+from disease_database.loader import (
+    load_disease_information,
+    load_disclaimer
+)
+# Load disease database and disclaimer
+disclaimer = load_disclaimer()
+disease_database = load_disease_information()
 
 # ============================================================
 # PAGE CONFIGURATION
@@ -17,35 +27,42 @@ st.set_page_config(
 
 
 # ============================================================
-# MODEL PATH
+# FASTAPI CONNECTION
 # ============================================================
 
-# The model file must be stored in the same GitHub folder as app.py.
-# Current deployment model: yolo26n-cls.pt
 BASE_DIR = Path(__file__).resolve().parent
-MODEL_PATH = Path(__file__).resolve().parent / "plant_model.pt"
+MODEL_PATH = BASE_DIR / "best.pt"
+import os
 
+API_BASE_URL = os.getenv(
+    "API_BASE_URL",
+    "http://127.0.0.1:8000"
+)
+
+API_URL = f"{API_BASE_URL}/predict"
 
 # ============================================================
-# LOAD YOLO MODEL
+# LOAD DISEASE DATABASE
 # ============================================================
 
-if not MODEL_PATH.is_file():
-    st.error(
-        f"Model file not found: {MODEL_PATH.name}. "
-        "Upload yolo26n-cls.pt to the same folder as app.py in GitHub."
+disease_database = load_disease_information()
+disclaimer = load_disclaimer()
+# ============================================================
+# LANGUAGE SELECTION
+# ============================================================
+
+with st.sidebar:
+    language = st.selectbox(
+        "🌐 Information Language",
+        options=["English", "తెలుగు"]
     )
-    st.stop()
 
+    selected_language = (
+        "english" if language == "English" else "telugu"
+    )
 
-@st.cache_resource
-def load_model():
-    return YOLO(str(MODEL_PATH))
-
-
-model = load_model()
-
-
+    # Load bilingual disclaimer
+    disease_database = load_disease_information()
 # ============================================================
 # FUTURISTIC ANIMATED BACKGROUND
 # ============================================================
@@ -1624,7 +1641,6 @@ with right:
 if image_source is not None:
 
     st.write("")
-
     st.divider()
 
     analyze_col1, analyze_col2, analyze_col3 = st.columns(
@@ -1632,19 +1648,16 @@ if image_source is not None:
     )
 
     with analyze_col2:
-
         analyze = st.button(
             "🔬 ANALYZE PLANT",
             width="stretch"
         )
-
 
     if analyze:
 
         image = Image.open(
             image_source
         ).convert("RGB")
-
 
         # ----------------------------------------------------
         # Processing message
@@ -1654,33 +1667,98 @@ if image_source is not None:
             "AI Vision Engine is analyzing the plant..."
         ):
 
-            results = model(
-                image,
-                verbose=False
-            )
+            try:
 
+                # Convert image into bytes
+                image_bytes = BytesIO()
+                image.save(
+                    image_bytes,
+                    format="JPEG"
+                )
+                image_bytes.seek(0)
 
-        result = results[0]
+                # Send image to FastAPI
+                response = requests.post(
+                    API_URL,
+                    files={
+                        "file": (
+                            "plant_image.jpg",
+                            image_bytes,
+                            "image/jpeg"
+                        )
+                    },
+                    timeout=60
+                )
 
-        probabilities = result.probs
+                # Check API response
+                if response.status_code != 200:
+                    st.error(
+                        f"API Error {response.status_code}: "
+                        f"{response.text}"
+                    )
+                    st.stop()
 
+                # Read prediction from FastAPI
+                prediction = response.json()
 
-        # ----------------------------------------------------
-        # TOP 1
-        # ----------------------------------------------------
+                predicted_disease = prediction[
+                    "predicted_disease"
+                ]
 
-        top1_id = int(
-            probabilities.top1
-        )
+                confidence = float(
+                    prediction["confidence"]
+                )
 
-        confidence = float(
-            probabilities.top1conf
-        )
+                predicted_class = predicted_disease
 
-        predicted_class = result.names[
-            top1_id
-        ]
+                # ------------------------------------------------
+                # SAVE PREDICTION HISTORY
+                # ------------------------------------------------
 
+                current_datetime = datetime.now()
+
+                prediction_date = current_datetime.strftime("%Y-%m-%d")
+                prediction_time = current_datetime.strftime("%H:%M:%S")
+
+                image_reference = "uploaded_or_camera_image"
+
+                save_prediction(
+                    prediction_date,
+                    prediction_time,
+                    image_reference,
+                    predicted_class,
+                    confidence
+                )
+
+                # Find information about the predicted disease
+                disease_info = next(
+                    (
+                        item
+                        for item in disease_database
+                        if item["class_name"] == predicted_class
+                    ),
+                    None
+                )
+
+            except requests.exceptions.ConnectionError:
+                st.error(
+                    "Cannot connect to FastAPI. "
+                    "Please start the backend server."
+                )
+                st.stop()
+
+            except requests.exceptions.Timeout:
+                st.error(
+                    "The FastAPI server took too long to respond. "
+                    "Please try again."
+                )
+                st.stop()
+
+            except Exception as error:
+                st.error(
+                    f"Prediction failed: {error}"
+                )
+                st.stop()
 
         # ----------------------------------------------------
         # RESULT
@@ -1690,8 +1768,9 @@ if image_source is not None:
             f"""
 <div class="result-box">
 
+
 <div class="result-label">
-AI DIAGNOSIS
+AI-ASSISTED PREDICTION
 </div>
 
 <div class="result-name">
@@ -1703,16 +1782,13 @@ AI DIAGNOSIS
             unsafe_allow_html=True
         )
 
-
         st.write("")
-
 
         # ----------------------------------------------------
         # METRICS
         # ----------------------------------------------------
 
         metric1, metric2, metric3 = st.columns(3)
-
 
         with metric1:
 
@@ -1733,7 +1809,6 @@ CONFIDENCE
                 unsafe_allow_html=True
             )
 
-
         with metric2:
 
             st.markdown(
@@ -1752,7 +1827,6 @@ CLASSES
 """,
                 unsafe_allow_html=True
             )
-
 
         with metric3:
 
@@ -1773,9 +1847,8 @@ VISION ENGINE
                 unsafe_allow_html=True
             )
 
-
         # ----------------------------------------------------
-        # TOP 5
+        # CONFIDENCE INFORMATION
         # ----------------------------------------------------
 
         st.write("")
@@ -1784,59 +1857,261 @@ VISION ENGINE
             "### 🧠 AI Confidence Map"
         )
 
-        top5_ids = probabilities.top5
-
-        top5_confidences = probabilities.top5conf
-
-
-        for index, class_id in enumerate(top5_ids):
-
-            class_id = int(class_id)
-
-            class_name = result.names[
-                class_id
-            ]
-
-            confidence_value = float(
-                top5_confidences[index]
-            )
-
-
-            st.markdown(
-                f"""
+        st.markdown(
+            f"""
 <div class="prediction-item">
 
 <span>
-<b>{index + 1}.</b>
-{class_name}
+<b>1.</b>
+{predicted_class}
 </span>
 
 <span style="
 color:#8cffb5;
 font-weight:700;
 ">
-
-{confidence_value * 100:.2f}%
-
+{confidence * 100:.2f}%
 </span>
 
 </div>
 """,
-                unsafe_allow_html=True
-            )
-
+            unsafe_allow_html=True
+        )
 
         # ----------------------------------------------------
-        # INFORMATION
+        # DISEASE INFORMATION
         # ----------------------------------------------------
 
         st.write("")
 
-        st.info(
-            "This prediction is generated by the Plant Vision AI "
-            "classification model trained on the PlantVillage dataset. "
-            "For real-world agricultural decisions, verify results "
-            "with appropriate agricultural expertise."
+        if disease_info is not None:
+
+            st.markdown(
+                "### 🌿 Disease Information"
+            )
+
+            st.markdown(
+                f"**Disease:** {disease_info['disease_name']}"
+            )
+
+            st.markdown("#### 🔍 Symptoms")
+            st.write(
+                disease_info["symptoms"][selected_language]
+            )
+
+            st.markdown("#### 🛡️ Prevention")
+            st.write(
+                disease_info["prevention"][selected_language]
+            )
+
+            st.markdown("#### 🩺 Management")
+            st.write(
+                disease_info["management"][selected_language]
+            )
+
+        else:
+
+            st.warning(
+                "Disease information is not available."
+            )
+
+        # ----------------------------------------------------
+        # AI DISCLAIMER
+        # ----------------------------------------------------
+
+        st.write("")
+
+        st.markdown(
+            f"""
+            <div style="
+                margin-top: 25px;
+                padding: 18px 22px;
+                border-radius: 16px;
+                background: rgba(255, 193, 7, 0.08);
+                border: 1px solid rgba(255, 193, 7, 0.25);
+                color: #d8e4dc;
+                font-size: 14px;
+                line-height: 1.6;
+            ">
+                <div style="
+                    color: #ffd166;
+                    font-weight: 800;
+                    margin-bottom: 6px;
+                    font-size: 15px;
+                ">
+                    ⚠️ AI-ASSISTED RESULT
+                </div>
+
+                {disclaimer[selected_language]}
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
+        
+
+
+# ============================================================
+# PREDICTION HISTORY
+# ============================================================
+
+st.write("")
+st.divider()
+
+st.markdown(
+    """
+    <div class="section-heading">
+        📜 Prediction History
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+st.markdown(
+    """
+    <div class="section-description">
+        View and filter your previous AI-assisted plant disease predictions.
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+st.write("")
+
+# ------------------------------------------------------------
+# LOAD HISTORY
+# ------------------------------------------------------------
+
+history = get_prediction_history()
+
+if history.empty:
+
+    st.info(
+        "No prediction history available yet."
+    )
+
+else:
+
+    # --------------------------------------------------------
+    # FILTER SECTION
+    # --------------------------------------------------------
+
+    st.markdown("### 🔎 Filter History")
+
+    filter_col1, filter_col2, filter_col3 = st.columns(3)
+
+    # --------------------------------------------------------
+    # DATE FILTER
+    # --------------------------------------------------------
+
+    with filter_col1:
+
+        use_date_filter = st.checkbox(
+            "Filter by Date"
+        )
+
+        selected_date = None
+
+        if use_date_filter:
+
+            selected_date = st.date_input(
+                "Select Date",
+                value=datetime.now().date()
+            )
+
+    # --------------------------------------------------------
+    # DISEASE FILTER
+    # --------------------------------------------------------
+
+    with filter_col2:
+
+        disease_options = [
+            "All"
+        ] + sorted(
+            history["predicted_class"]
+            .dropna()
+            .unique()
+            .tolist()
+        )
+
+        selected_disease = st.selectbox(
+            "Disease / Class",
+            disease_options
+        )
+
+    # --------------------------------------------------------
+    # CONFIDENCE FILTER
+    # --------------------------------------------------------
+
+    with filter_col3:
+
+        minimum_confidence_percentage = st.slider(
+            "Minimum Confidence",
+            min_value=0,
+            max_value=100,
+            value=0,
+            step=5
+        )
+
+        minimum_confidence = (
+            minimum_confidence_percentage / 100
+        )
+
+    # --------------------------------------------------------
+    # APPLY FILTERS
+    # --------------------------------------------------------
+
+    filtered_history = filter_prediction_history(
+        history,
+        selected_date=selected_date,
+        selected_disease=selected_disease,
+        minimum_confidence=minimum_confidence
+    )
+
+    st.write("")
+
+    # --------------------------------------------------------
+    # FILTER RESULT
+    # --------------------------------------------------------
+
+    st.caption(
+        f"Showing {len(filtered_history)} "
+        f"of {len(history)} prediction records."
+    )
+
+    # --------------------------------------------------------
+    # DISPLAY HISTORY
+    # --------------------------------------------------------
+
+    if filtered_history.empty:
+
+        st.warning(
+            "No prediction history matches the selected filters."
+        )
+
+    else:
+
+        history_display = filtered_history.copy()
+
+        history_display["confidence"] = (
+            history_display["confidence"] * 100
+        ).round(2)
+
+        history_display = history_display.rename(
+            columns={
+                "id": "ID",
+                "prediction_date": "Date",
+                "prediction_time": "Time",
+                "image_reference": "Image",
+                "predicted_class": "Prediction",
+                "confidence": "Confidence (%)"
+            }
+        )
+
+        st.dataframe(
+            history_display,
+            width="stretch",
+            hide_index=True
         )
 
 
